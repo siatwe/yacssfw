@@ -24,15 +24,19 @@ h2 {
 }
 h3 {
   font-size: 29px;
+  margin-bottom: 15px;
 }
 h4 {
   font-size: 23px;
+  margin-bottom: 12.5px;
 }
 h5 {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 h6 {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .Capsule {
   padding: 0;
@@ -177,7 +181,6 @@ h6 {
   color: #bfbfbf;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
-  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.75);
 }
 .Button--info {
   background: #87cefa;
@@ -210,4 +213,92 @@ h6 {
 .Button--error:hover {
   background: #650c0c;
   color: #f5aeae;
+}
+.Key {
+  position: relative;
+  display: inline-block;
+  background: #b6b6b6;
+  border-radius: 5px;
+  height: 40px;
+  min-width: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 5px;
+  -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.6);
+  margin: 5px 0;
+  font-size: 18px;
+  color: black;
+}
+.Key__Secondary {
+  position: absolute;
+  color: #454545;
+  top: -6px;
+  right: 3px;
+  text-transform: lowercase;
+}
+.Key__Tertiary {
+  position: absolute;
+  color: #454545;
+  bottom: -10px;
+  left: 3px;
+  text-transform: lowercase;
+}
+.Key--grip:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 2px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #b6b6b6;
+  background: #b6b6b6;
+}
+.Key--active {
+  background: #454545;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.6);
+  border-color: #454545;
+  font-weight: bolder;
+  color: white;
+}
+.Key--active .Key__Secondary,
+.Key--active .Key__Tertiary {
+  color: #b6b6b6;
+}
+.Key--lowercase {
+  text-transform: lowercase;
+}
+.Key--info {
+  background: #87cefa;
+}
+.Key--info .Key__Secondary,
+.Key--info .Key__Tertiary {
+  color: #054f7d;
+}
+.Key--success {
+  background: #90ee90;
+}
+.Key--success .Key__Secondary,
+.Key--success .Key__Tertiary {
+  color: #116e11;
+}
+.Key--warning {
+  background: #fff089;
+}
+.Key--warning .Key__Secondary,
+.Key--warning .Key__Tertiary {
+  color: #897800;
+}
+.Key--error {
+  background: #f08080;
+}
+.Key--error .Key__Secondary,
+.Key--error .Key__Tertiary {
+  color: #650c0c;
 }
