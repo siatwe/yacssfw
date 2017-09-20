@@ -15,7 +15,7 @@ COMPONENTS
 - [x] Quotes
 - [x] Links
 - [x] Tables
-- [ ] Buttons
+- [x] Buttons
 - [ ] Carousel
 - [ ] Dropdown
 - [ ] Forms
