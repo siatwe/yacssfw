@@ -18,7 +18,7 @@ COMPONENTS
 - [x] Buttons
 - [x] Keyboard keys
 - [x] Iconfont (Third party software: Open Iconic)
-- [ ] Slider (Third party software: Slick)
+- [x] Responsive touchfriendly slider (Third party software: Slick)
 - [ ] Dropdown
 - [ ] Forms
 - [ ] Modal

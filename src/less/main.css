@@ -1,5 +1,7 @@
 @import "../vendor/normalize/normalize.css";
 @import "../vendor/open-iconic/font/css/open-iconic.min.css";
+@import "../vendor/slick/slick.css";
+@import "../vendor/slick/slick-theme.css";
 .txt--center {
   text-align: center!important;
 }
@@ -11,6 +13,18 @@
 }
 .display--block {
   display: block!important;
+}
+.bg--info {
+  background: #87cefa;
+}
+.bg--success {
+  background: #90ee90;
+}
+.bg--warning {
+  background: #fff089;
+}
+.bg--error {
+  background: #f08080;
 }
 .oi {
   font-size: 20px;
@@ -151,6 +165,7 @@ h6 {
 }
 .Table th {
   font-weight: bolder;
+  border-bottom: 1px solid #454545;
 }
 .Table td,
 .Table th {
