@@ -1,0 +1,32 @@
+//
+// COMPONENT: ALERT
+//
+
+.Alert {
+  display: block;
+  border: 1px solid lightgray;
+  padding: 10px 15px;
+  color: #505050;
+  margin: 15px 0;
+  font-weight: bold;
+  &--info {
+    border-color: @color-info--border;
+    background: @color-info;
+    color: @color-info--text;
+  }
+  &--success {
+    border-color: @color-success--border;
+    background: @color-success;
+    color: @color-success--text;
+  }
+  &--warning {
+    border-color: @color-warning--border;
+    background: @color-warning;
+    color: @color-warning--text;
+  }
+  &--error {
+    border-color: @color-error--border;
+    background: @color-error;
+    color: @color-error--text;
+  }
+}

@@ -1,0 +1,26 @@
+//
+// COMPONENT: QUOTE
+//
+
+.Quote {
+  display: block;
+  border-left: solid 5px @color-light;
+  padding: 5px 0 5px 15px;
+  &__Footer {
+    display: block;
+    position: relative;
+    color: @color-dark;
+    padding: 5px 0 5px 15px;
+    font-style: italic;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 1px;
+      background: @color-dark;
+      left: 5px;
+      top: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

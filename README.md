@@ -1,11 +1,20 @@
+Yet Another CSS Framework
+=========================
+An experimental framework for learning
+--------------------------------------
+
 REQUIREMENTS
 ============
 - [ ] Responsive grid with six columns based on flex
 - [ ] Responsive navigation with dropdowns and burger menu
+- [x] Unified monospace typography
 
 COMPONENTS
 ==========
-- [ ] Alerts
+- [x] Alerts
+- [x] Quotes
+- [x] Links
+- [x] Tables
 - [ ] Buttons
 - [ ] Carousel
 - [ ] Dropdown
