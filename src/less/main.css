@@ -8,6 +8,9 @@
 .width--100 {
   width: 100%!important;
 }
+.display--block {
+  display: block!important;
+}
 body {
   font-family: monospace;
   font-size: 12px;
@@ -68,6 +71,7 @@ h6 {
   display: block;
   border-left: solid 5px #b6b6b6;
   padding: 5px 0 5px 15px;
+  margin: 10px 0;
 }
 .Quote__Footer {
   display: block;
@@ -85,6 +89,30 @@ h6 {
   left: 5px;
   top: 50%;
   transform: translateX(-50%);
+}
+.Quote--info {
+  border-color: #87cefa;
+}
+.Quote--info .Quote__Footer {
+  color: #054f7d;
+}
+.Quote--success {
+  border-color: #90ee90;
+}
+.Quote--success .Quote__Footer {
+  color: #116e11;
+}
+.Quote--warning {
+  border-color: #fff089;
+}
+.Quote--warning .Quote__Footer {
+  color: #897800;
+}
+.Quote--error {
+  border-color: #f08080;
+}
+.Quote--error .Quote__Footer {
+  color: #650c0c;
 }
 .Link {
   font-weight: bolder;
@@ -108,8 +136,10 @@ h6 {
 }
 .Table {
   display: table;
-  width: 100%!important;
+  width: 100%;
   margin: 15px 0;
+  border: none!important;
+  border-collapse: collapse;
 }
 .Table th {
   font-weight: bolder;
