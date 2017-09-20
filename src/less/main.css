@@ -1,4 +1,5 @@
-@import "../vendor/Normalize/normalize.css";
+@import "../vendor/normalize/normalize.css";
+@import "../vendor/open-iconic/font/css/open-iconic.min.css";
 .txt--center {
   text-align: center!important;
 }
@@ -10,6 +11,9 @@
 }
 .display--block {
   display: block!important;
+}
+.oi {
+  font-size: 20px;
 }
 body {
   font-family: monospace;

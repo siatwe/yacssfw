@@ -17,7 +17,8 @@ COMPONENTS
 - [x] Tables
 - [x] Buttons
 - [x] Keyboard keys
-- [ ] Carousel
+- [x] Iconfont (Third party software: Open Iconic)
+- [ ] Slider (Third party software: Slick)
 - [ ] Dropdown
 - [ ] Forms
 - [ ] Modal
