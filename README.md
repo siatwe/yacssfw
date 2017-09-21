@@ -5,6 +5,9 @@ Yet Another CSS Framework
 An experimental framework following the BEM CSS rules
 -----------------------------------------------------
 
+see project for latest release: <a href="https://siatwe.github.io/projects/yacssfw/index.html" 
+target="_blank">yacssfw</a>
+
 FEATURES
 ========
 - [x] Responsive: Classic grid layout
