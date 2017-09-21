@@ -23,3 +23,14 @@ COMPONENTS
 - [ ] Dropdowns
 - [ ] Forms
 - [ ] Modals
+
+REQUIREMENTS
+============
+- jQuery >= 3.2.1
+
+USAGE
+=====
+The needed files can be found in the dist/ directory. 
+- Import the yacssfw css file into the head of your website
+- Import the yacssfw js file before the closing body tag of your website but
+after the jQuery js file
