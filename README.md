@@ -5,7 +5,8 @@ An experimental framework for learning
 
 FEATURES
 ========
-- [ ] Responsive grid with six columns based on flex
+- [ ] Responsive: Classic grid layout
+- [ ] Responsive: Flex layout
 - [ ] Responsive navigation with dropdowns and burger menu
 - [x] Unified monospace typography
 
