@@ -20,8 +20,6 @@ COMPONENTS
 - [x] Tables
 - [x] Buttons
 - [x] Keyboard keys
-- [x] Iconfont (Third party software: Open Iconic)
-- [x] Responsive touchfriendly slider (Third party software: Slick)
 - [ ] Dropdowns
 - [ ] Forms
 - [ ] Modals
