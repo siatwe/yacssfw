@@ -26,6 +26,9 @@
 .bg--error {
   background: #f08080;
 }
+.no--margin {
+  margin: 0!important;
+}
 .oi {
   font-size: 20px;
 }

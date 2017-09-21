@@ -1,3 +1,5 @@
+<img src="src/img/yacssfw-logo.png" alt="">
+
 Yet Another CSS Framework
 =========================
 An experimental framework for learning
@@ -20,6 +22,6 @@ COMPONENTS
 - [x] Keyboard keys
 - [x] Iconfont (Third party software: Open Iconic)
 - [x] Responsive touchfriendly slider (Third party software: Slick)
-- [ ] Dropdown
+- [ ] Dropdowns
 - [ ] Forms
-- [ ] Modal
+- [ ] Modals
