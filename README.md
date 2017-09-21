@@ -1,4 +1,4 @@
-<img src="src/img/yacssfw-logo.png" alt="">
+<img style="display: block; margin: 0 auto;" src="src/img/yacssfw-logo.png" alt="">
 
 Yet Another CSS Framework
 =========================
