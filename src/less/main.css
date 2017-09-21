@@ -60,12 +60,223 @@ h6 {
   margin-bottom: 5px;
 }
 .Capsule {
-  padding: 0;
+  padding: 0 10px;
   margin: 0 auto;
 }
-@media (min-width: 1300px) {
+.Capsule:before {
+  display: table;
+  content: " ";
+}
+.Capsule:after {
+  display: table;
+  content: " ";
+  clear: both;
+  box-sizing: border-box;
+}
+@media (min-width: 1200px) {
   .Capsule {
     width: 900px;
+  }
+}
+@media (max-width: 1199px) {
+  .Capsule {
+    width: 700px;
+  }
+}
+@media (max-width: 989px) {
+  .Capsule {
+    width: 700px;
+  }
+}
+@media (max-width: 779px) {
+  .Capsule {
+    width: 90%;
+  }
+}
+.Grid:before {
+  display: table;
+  content: " ";
+  box-sizing: border-box;
+}
+.Grid:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.Grid__L-half {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Grid__L-half {
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+    float: left;
+  }
+}
+.Grid__L-third {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Grid__L-third {
+    position: relative;
+    min-height: 1px;
+    width: 33.3333333%;
+    float: left;
+  }
+}
+.Grid__L-quarter {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Grid__L-quarter {
+    position: relative;
+    min-height: 1px;
+    width: 25%;
+    float: left;
+  }
+}
+.Grid__L-fifth {
+  display: block;
+}
+@media (min-width: 1200px) {
+  .Grid__L-fifth {
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
+  }
+}
+.Grid__M-half {
+  display: block;
+}
+@media (min-width: 990px) {
+  .Grid__M-half {
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+    float: left;
+  }
+}
+.Grid__M-third {
+  display: block;
+}
+@media (min-width: 990px) {
+  .Grid__M-third {
+    position: relative;
+    min-height: 1px;
+    width: 33.3333333%;
+    float: left;
+  }
+}
+.Grid__M-quarter {
+  display: block;
+}
+@media (min-width: 990px) {
+  .Grid__M-quarter {
+    position: relative;
+    min-height: 1px;
+    width: 25%;
+    float: left;
+  }
+}
+.Grid__M-fifth {
+  display: block;
+}
+@media (min-width: 990px) {
+  .Grid__M-fifth {
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
+  }
+}
+.Grid__S-half {
+  display: block;
+}
+@media (min-width: 780px) {
+  .Grid__S-half {
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+    float: left;
+  }
+}
+.Grid__S-third {
+  display: block;
+}
+@media (min-width: 780px) {
+  .Grid__S-third {
+    position: relative;
+    min-height: 1px;
+    width: 33.3333333%;
+    float: left;
+  }
+}
+.Grid__S-quarter {
+  display: block;
+}
+@media (min-width: 780px) {
+  .Grid__S-quarter {
+    position: relative;
+    min-height: 1px;
+    width: 25%;
+    float: left;
+  }
+}
+.Grid__S-fifth {
+  display: block;
+}
+@media (min-width: 780px) {
+  .Grid__S-fifth {
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
+  }
+}
+.Grid__XS-half {
+  display: block;
+}
+@media (min-width: 320px) {
+  .Grid__XS-half {
+    position: relative;
+    min-height: 1px;
+    width: 50%;
+    float: left;
+  }
+}
+.Grid__XS-third {
+  display: block;
+}
+@media (min-width: 320px) {
+  .Grid__XS-third {
+    position: relative;
+    min-height: 1px;
+    width: 33.3333333%;
+    float: left;
+  }
+}
+.Grid__XS-quarter {
+  display: block;
+}
+@media (min-width: 320px) {
+  .Grid__XS-quarter {
+    position: relative;
+    min-height: 1px;
+    width: 25%;
+    float: left;
+  }
+}
+.Grid__XS-fifth {
+  display: block;
+}
+@media (min-width: 320px) {
+  .Grid__XS-fifth {
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
   }
 }
 .Alert {

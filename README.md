@@ -2,12 +2,12 @@
 
 Yet Another CSS Framework
 =========================
-An experimental framework for learning
---------------------------------------
+An experimental framework following the BEM CSS rules
+-----------------------------------------------------
 
 FEATURES
 ========
-- [ ] Responsive: Classic grid layout
+- [x] Responsive: Classic grid layout
 - [ ] Responsive: Flex layout
 - [ ] Responsive navigation with dropdowns and burger menu
 - [x] Unified monospace typography
