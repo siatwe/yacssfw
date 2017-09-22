@@ -490,6 +490,10 @@ h6 {
   content: " ";
   clear: both;
 }
+.Grid__Full {
+  display: block;
+  width: 100%;
+}
 .Grid__L-half {
   display: block;
 }
@@ -665,6 +669,13 @@ h6 {
     width: 20%;
     float: left;
   }
+}
+.Form input {
+  display: block;
+  width: 100%;
+}
+.Form input:not(:last-of-type) {
+  margin-bottom: 15px;
 }
 .Alert {
   display: block;
