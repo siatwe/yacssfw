@@ -401,6 +401,9 @@ template {
 .display--block {
   display: block!important;
 }
+.no--margin {
+  margin: 0!important;
+}
 .bg--info {
   background: #87cefa !important;
 }
@@ -415,12 +418,6 @@ template {
 }
 .bg--transparent {
   background: transparent!important;
-}
-.no--margin {
-  margin: 0!important;
-}
-.oi {
-  font-size: 20px;
 }
 body {
   font-family: monospace;
