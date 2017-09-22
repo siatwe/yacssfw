@@ -1,0 +1,23 @@
+.Grid {
+  display: flex;
+}
+.Grid__Half-L {
+  padding: 10px;
+  width: 50%;
+}
+.Grid__Third-L {
+  padding: 10px;
+  width: 33.3333%;
+}
+.Grid__Third-L {
+  padding: 10px;
+  width: 33.3333%;
+}
+.Grid__Fourth-L {
+  padding: 10px;
+  width: 25%;
+}
+.Grid__Fifth-L {
+  padding: 10px;
+  width: 20%;
+}
