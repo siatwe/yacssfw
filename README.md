@@ -1,5 +1,3 @@
-<img style="display: block; margin: 0 auto;" src="src/img/yacssfw-logo.png" alt="">
-
 Yet Another CSS Framework
 =========================
 An experimental framework following the BEM CSS rules

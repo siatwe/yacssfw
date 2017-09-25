@@ -12,656 +12,769 @@
     <link rel="stylesheet" href="src/less/main.css">
 </head>
 <body>
-<div class="header">
-    <h1>YACSSFW</h1>
-    <p class="txt--center no--margin">Yet Another CSS FrameWork</p>
-    <p class="txt--center"><a class="Link Link--success"
-                              href="https://github.com/siatwe/yacssfw"
-                              target="_blank">Download
-        from
-        Github</a></p>
-</div>
+<header class="Header">
+    <div class="Header__Description">Class .Header<br>100vh with absolute logo
+        element
+    </div>
+    <div class="Header__Logo">
+        <h1>YACSSFW</h1>
+        <p>Yet Another CSS FrameWork</p>
+        <a class="Link Link--success"
+           href="https://github.com/siatwe/yacssfw" target="_blank">Download
+            from github</a>
+    </div>
+</header>
 <section class="Layout">
-    <h2>Grid layout</h2>
-    <h3>based on flex, with 4 given cols</h3>
-    <div class="Capsule">
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>.Grid</td>
-                <td>The grid container to receives grid items</td>
-            </tr>
-            <tr>
-                <td>.Auto</td>
-                <td>
-                    flex: 1;
-                </td>
-            </tr>
-            <tr>
-                <td>.L1-1 .M1-1 .S1-1 .XS1-1</td>
-                <td>
-                    flex-base: 100%; max-width: 100%;
-                </td>
-            </tr>
-            <tr>
-                <td>.L1-2 .M1-2 .S1-2 .XS1-2</td>
-                <td>
-                    flex-base: 50%; max-width: 50%;
-                </td>
-            </tr>
-            <tr>
-                <td>.L1-3 .M1-3 .S1-3 .XS1-3</td>
-                <td>
-                    flex-base: 33.33333%; max-width: 33.33333%;
-                </td>
-            </tr>
-            <tr>
-                <td>.L1-4 .M1-4 .S1-4 .XS1-4</td>
-                <td>
-                   flex-base: 25%; max-width: 25%;
-                </td>
-            </tr>
-            <tr>
-                <td>.L2-3 .M2-3 .S2-3 .XS2-3</td>
-                <td>
-                    flex-base: 66.66666%; max-width: 66.66666%;
-                </td>
-            </tr>
-            <tr>
-                <td>.L3-4 .M3-4 .S3-4 .XS3-4</td>
-                <td>
-                    flex-base: 75%; max-width: 75%;
-                </td>
-            </tr>
-        </table>
-        <div class="Grid">
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-        </div>
-        <br>
-        <div class="Grid">
-            <div class="Grid__Examples L3-4 M1-4">.L3-4 .M1-4</div>
-            <div class="Grid__Examples L1-4 M3-4">.L1-4 .M3-4</div>
-        </div>
-        <br>
-        <div class="Grid">
-            <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                S1-2 .XS1-1
+    <div class="content">
+        <h2>Grid layout</h2>
+        <h3>based on flex, with 4 given cols</h3>
+        <div class="Capsule">
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>.Grid</td>
+                    <td>The grid container to receives grid items</td>
+                </tr>
+                <tr>
+                    <td>.Auto</td>
+                    <td>
+                        flex: 1;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Full:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        .L1-1 .M1-1 .S1-1 .XS1-1
+                    </td>
+                    <td>
+                        flex-base: 100%; max-width: 100%;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Half:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        .L1-2 .M1-2 .S1-2 .XS1-2
+                    </td>
+                    <td>
+                        flex-base: 50%; max-width: 50%;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Third:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .L1-3
+                        .M1-3 .S1-3 .XS1-3
+                    </td>
+                    <td>
+                        flex-base: 33.33333%; max-width: 33.33333%;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quarter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .L1-4 .M1-4 .S1-4
+                        .XS1-4
+                    </td>
+                    <td>
+                        flex-base: 25%; max-width: 25%;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Two-Thirds:&nbsp;&nbsp; .L2-3 .M2-3 .S2-3 .XS2-3</td>
+                    <td>
+                        flex-base: 66.66666%; max-width: 66.66666%;
+                    </td>
+                </tr>
+                <tr>
+                    <td>Three-Fourth: .L3-4 .M3-4 .S3-4 .XS3-4</td>
+                    <td>
+                        flex-base: 75%; max-width: 75%;
+                    </td>
+                </tr>
+            </table>
+            <div class="Grid">
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
             </div>
-            <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                S1-2 .XS1-1
+            <br>
+            <div class="Grid">
+                <div class="Grid__Examples L3-4 M1-4">.L3-4 .M1-4</div>
+                <div class="Grid__Examples L1-4 M3-4">.L1-4 .M3-4</div>
             </div>
-            <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                S1-2 .XS1-1
+            <br>
+            <div class="Grid">
+                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
+                    S1-2 .XS1-1
+                </div>
+                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
+                    S1-2 .XS1-1
+                </div>
+                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
+                    S1-2 .XS1-1
+                </div>
+                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
+                    S1-2 .XS1-1
+                </div>
             </div>
-            <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                S1-2 .XS1-1
+            <br>
+            <div class="Grid">
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
+                    .S1-2
+                    .XS1-1
+                </div>
+            </div>
+            <br>
+            <div class="Grid">
+                <div class="Grid__Examples L3-4 M3-4 S3-4 XS3-4">.L3-4 .M3-4
+                    .S3-4
+                    .XS3-4
+                </div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+            </div>
+            <h3>Nested</h3>
+            <p>(3x <span
+                    class="bg--success txt--success">
+                .L1-3.M1-3.S1-3</span>
+                in 1x
+                <span class="bg--success txt--success">.L1-3.M1-2.S1-4.XS1-1</span>)
+                and
+                4x <span class="bg--success txt--success">.Auto</span></p>
+            <div class="Grid">
+                <div class="Grid__Examples L1-3 M1-2 S1-4 XS1-1">
+                    <div class="Grid">
+                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
+                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
+                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
+                    </div>
+                </div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+                <div class="Grid__Examples Auto">.Auto</div>
+            </div>
+            <br>
+            <p>(2x <span
+                    class="bg--success txt--success">.L1-2.M1-2.S1-1.XS1-1</span>
+                in 1x <span class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
+            </p>
+            <p>(3x <span
+                    class="bg--success txt--success">.L1-3.M1-3.S1-3.XS1-3</span>
+                in 1x <span
+                        class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
+            </p>
+            <p>(4x <span
+                    class="bg--success txt--success">.L1-4.M1-4.S1-4.XS1-4</span>
+                in 1x <span class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
+            </p>
+            <div class="Grid">
+                <div class="L1-3 M1-2 S1-1 XS1-1">
+                    <div class="Grid">
+                        <div class="Grid__Examples L1-2 M1-2 S1-1 XS1-1">1/2
+                        </div>
+                        <div class="Grid__Examples L1-2 M1-2 S1-1 XS1-1">1/2
+                        </div>
+                    </div>
+                </div>
+                <div class="L1-3 M1-2 S1-1 XS1-1">
+                    <div class="Grid">
+                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
+                        </div>
+                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
+                        </div>
+                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
+                        </div>
+                    </div>
+                </div>
+                <div class="L1-3 M1-2 S1-1 XS1-1">
+                    <div class="Grid">
+                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
+                        </div>
+                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
+                        </div>
+                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
+                        </div>
+                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <div class="Grid">
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3 .S1-2
-                .XS1-1</div>
-        </div>
-        <br>
-        <div class="Grid">
-            <div class="Grid__Examples L3-4 M3-4 S3-4 XS3-4">.L3-4 .M3-4 .S3-4
-                .XS3-4</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
-            <div class="Grid__Examples Auto">.Auto</div>
+    </div>
+</section>
+<section>
+    <div class="content">
+        <div class="Capsule">
+            <h2>Headings</h2>
+            <h1>h1.YACSSFW Heading</h1>
+            <h2>h2.YACSSFW Heading</h2>
+            <h3>h3.YACSSFW Heading</h3>
+            <h4>h4.YACSSFW Heading</h4>
+            <h5>h5.YACSSFW Heading</h5>
+            <h6>h6.YACSSFW Heading</h6>
         </div>
     </div>
 </section>
 <section>
-    <div class="Capsule">
-        <h2>Headings</h2>
-        <h1>h1.YACSSFW Heading</h1>
-        <h2>h2.YACSSFW Heading</h2>
-        <h3>h3.YACSSFW Heading</h3>
-        <h4>h4.YACSSFW Heading</h4>
-        <h5>h5.YACSSFW Heading</h5>
-        <h6>h6.YACSSFW Heading</h6>
-    </div>
-</section>
-<section>
-    <div class="Capsule">
-        <h2>Quotes</h2>
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>.Quote</td>
-                <td>
-                    <div class="Quote">Lorem ipsum dolor sit amet</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Quote__Footer</td>
-                <td>
-                    <div class="Quote__Footer">James Franklin</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Quote .Quote--info</td>
-                <td>
-                    <div class="Quote Quote--info">Lorem ipsum dolor sit amet
+    <div class="content">
+        <div class="Capsule">
+            <h2>Quotes</h2>
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>.Quote</td>
+                    <td>
+                        <div class="Quote">Lorem ipsum dolor sit amet</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Quote__Footer</td>
+                    <td>
                         <div class="Quote__Footer">James Franklin</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Quote .Quote--success</td>
-                <td>
-                    <div class="Quote Quote--success">Lorem ipsum dolor sit amet
-                        <div class="Quote__Footer">James Franklin</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Quote .Quote--warning</td>
-                <td>
-                    <div class="Quote Quote--warning">Lorem ipsum dolor sit amet
-                        <div class="Quote__Footer">James Franklin</div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Quote .Quote--error</td>
-                <td>
-                    <div class="Quote Quote--error">Lorem ipsum dolor sit amet
-                        <div class="Quote__Footer">James Franklin</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div class="Quote">
-            Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
-            scelerisque dapibus ante eget varius.
-            Suspendisse maximus, felis id viverra varius, quam mi porttitor
-            lacus, quis vestibulum nisl libero ut metus.
-            <span class="Quote__Footer">Julius Caesar</span>
-        </div>
-        <div class="Quote Quote--info">
-            Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
-            scelerisque dapibus ante eget varius.
-            Suspendisse maximus, felis id viverra varius, quam mi porttitor
-            lacus, quis vestibulum nisl libero ut metus.
-            <span class="Quote__Footer">Julius Caesar</span>
-        </div>
-        <div class="Quote Quote--success">
-            Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
-            scelerisque dapibus ante eget varius.
-            Suspendisse maximus, felis id viverra varius, quam mi porttitor
-            lacus, quis vestibulum nisl libero ut metus.
-            <span class="Quote__Footer">Julius Caesar</span>
-        </div>
-        <div class="Quote Quote--warning">
-            Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
-            scelerisque dapibus ante eget varius.
-            Suspendisse maximus, felis id viverra varius, quam mi porttitor
-            lacus, quis vestibulum nisl libero ut metus.
-            <span class="Quote__Footer">Julius Caesar</span>
-        </div>
-        <div class="Quote Quote--error">
-            Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
-            scelerisque dapibus ante eget varius.
-            Suspendisse maximus, felis id viverra varius, quam mi porttitor
-            lacus, quis vestibulum nisl libero ut metus.
-            <span class="Quote__Footer">Julius Caesar</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Quote .Quote--info</td>
+                    <td>
+                        <div class="Quote Quote--info">Lorem ipsum dolor sit
+                            amet
+                            <div class="Quote__Footer">James Franklin</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Quote .Quote--success</td>
+                    <td>
+                        <div class="Quote Quote--success">Lorem ipsum dolor sit
+                            amet
+                            <div class="Quote__Footer">James Franklin</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Quote .Quote--warning</td>
+                    <td>
+                        <div class="Quote Quote--warning">Lorem ipsum dolor sit
+                            amet
+                            <div class="Quote__Footer">James Franklin</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Quote .Quote--error</td>
+                    <td>
+                        <div class="Quote Quote--error">Lorem ipsum dolor sit
+                            amet
+                            <div class="Quote__Footer">James Franklin</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="Quote">
+                Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
+                scelerisque dapibus ante eget varius.
+                Suspendisse maximus, felis id viverra varius, quam mi porttitor
+                lacus, quis vestibulum nisl libero ut metus.
+                <span class="Quote__Footer">Julius Caesar</span>
+            </div>
+            <div class="Quote Quote--info">
+                Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
+                scelerisque dapibus ante eget varius.
+                Suspendisse maximus, felis id viverra varius, quam mi porttitor
+                lacus, quis vestibulum nisl libero ut metus.
+                <span class="Quote__Footer">Julius Caesar</span>
+            </div>
+            <div class="Quote Quote--success">
+                Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
+                scelerisque dapibus ante eget varius.
+                Suspendisse maximus, felis id viverra varius, quam mi porttitor
+                lacus, quis vestibulum nisl libero ut metus.
+                <span class="Quote__Footer">Julius Caesar</span>
+            </div>
+            <div class="Quote Quote--warning">
+                Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
+                scelerisque dapibus ante eget varius.
+                Suspendisse maximus, felis id viverra varius, quam mi porttitor
+                lacus, quis vestibulum nisl libero ut metus.
+                <span class="Quote__Footer">Julius Caesar</span>
+            </div>
+            <div class="Quote Quote--error">
+                Nulla vel risus eu metus gravida molestie nec sed ante. Praesent
+                scelerisque dapibus ante eget varius.
+                Suspendisse maximus, felis id viverra varius, quam mi porttitor
+                lacus, quis vestibulum nisl libero ut metus.
+                <span class="Quote__Footer">Julius Caesar</span>
+            </div>
         </div>
     </div>
 </section>
 <section>
-    <div class="Capsule">
-        <h2>Links</h2>
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>.Link</td>
-                <td><a href="" class="Link">Normal link</a></td>
-            </tr>
-            <tr>
-                <td>.Link .Link--info</td>
-                <td><a href="" class="Link Link--info">Info link</a></td>
-            </tr>
-            <tr>
-                <td>.Link .Link--success</td>
-                <td><a href="" class="Link Link--success">Success link</a></td>
-            </tr>
-            <tr>
-                <td>.Link .Link--warning</td>
-                <td><a href="" class="Link Link--warning">Warning link</a></td>
-            </tr>
-            <tr>
-                <td>.Link .Link--error</td>
-                <td><a href="" class="Link Link--error">Error link</a></td>
-            </tr>
-        </table>
-        <p>Lorem ipsum dolor sit amet, <a class="Link" href="">consectetur</a>
-            adipiscing elit. <a
-                    class="Link Link--info"
-                    href="">Praesent lacus
-                risus</a>,
-            scelerisque ut
-            lorem a, tincidunt
-            cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
-            lorem blandit eleifend eget ut sem. Nulla
-            sit
-            amet congue mauris. Vivamus non ante <a class="Link Link--success"
-                                                    href="">elementum</a>,
-            convallis eros
-            eget,
-            volutpat
-            lorem.
-            Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
-            turpis pellentesque condimentum. Duis scelerisque <a
-                    class="Link Link--error" href="">erat</a> non nisl
-            maximus
-            faucibus.</p>
+    <div class="content">
+        <div class="Capsule">
+            <h2>Links</h2>
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>.Link</td>
+                    <td><a href="" class="Link">Normal link</a></td>
+                </tr>
+                <tr>
+                    <td>.Link .Link--info</td>
+                    <td><a href="" class="Link Link--info">Info link</a></td>
+                </tr>
+                <tr>
+                    <td>.Link .Link--success</td>
+                    <td><a href="" class="Link Link--success">Success link</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Link .Link--warning</td>
+                    <td><a href="" class="Link Link--warning">Warning link</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Link .Link--error</td>
+                    <td><a href="" class="Link Link--error">Error link</a></td>
+                </tr>
+            </table>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+        </div>
     </div>
 </section>
 <section>
-    <div class="Capsule">
-        <h2>Alerts</h2>
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>.Alert .Alert--light</td>
-                <td>
-                    <div class="Alert Alert--light">Light alert</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Alert .Alert--info</td>
-                <td>
-                    <div class="Alert Alert--info">Info alert</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Alert .Alert--success</td>
-                <td>
-                    <div class="Alert Alert--success">Success alert</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Alert .Alert--warning</td>
-                <td>
-                    <div class="Alert Alert--warning">Warning alert</div>
-                </td>
-            </tr>
-            <tr>
-                <td>.Alert .Alert--error</td>
-                <td>
-                    <div class="Alert Alert--error">Error alert</div>
-                </td>
-            </tr>
-        </table>
-        <div class="Alert">Light alert</div>
-        <div class="Alert Alert--info">Info alert</div>
-        <div class="Alert Alert--success">Success alert</div>
-        <div class="Alert Alert--warning">Warning alert</div>
-        <div class="Alert Alert--error">Error alert</div>
+    <div class="content">
+        <div class="Capsule">
+            <h2>Alerts</h2>
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>.Alert .Alert--light</td>
+                    <td>
+                        <div class="Alert Alert--light">Light alert</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Alert .Alert--info</td>
+                    <td>
+                        <div class="Alert Alert--info">Info alert</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Alert .Alert--success</td>
+                    <td>
+                        <div class="Alert Alert--success">Success alert</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Alert .Alert--warning</td>
+                    <td>
+                        <div class="Alert Alert--warning">Warning alert</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Alert .Alert--error</td>
+                    <td>
+                        <div class="Alert Alert--error">Error alert</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="Alert">Light alert</div>
+            <div class="Alert Alert--info">Info alert</div>
+            <div class="Alert Alert--success">Success alert</div>
+            <div class="Alert Alert--warning">Warning alert</div>
+            <div class="Alert Alert--error">Error alert</div>
+        </div>
     </div>
 </section>
 <section>
-    <div class="Capsule">
-        <h2>Buttons</h2>
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-                <th>Disabled</th>
-            </tr>
-            <tr>
-                <td>.Button</td>
-                <td>
+    <div class="content">
+        <div class="Capsule">
+            <h2>Buttons</h2>
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                    <th>Disabled</th>
+                </tr>
+                <tr>
+                    <td>.Button</td>
+                    <td>
+                        <button class="Button">Button</button>
+                    </td>
+                    <td>
+                        <button class="Button Button" disabled>Button</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Button .Button--info</td>
+                    <td>
+                        <button class="Button Button--info">Info button</button>
+                    </td>
+                    <td>
+                        <button class="Button Button--info" disabled>Info button
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Button .Button--success</td>
+                    <td>
+                        <button class="Button Button--success">Success button
+                        </button>
+                    </td>
+                    <td>
+                        <button class="Button Button--success" disabled>Success
+                            button
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Button .Button--warning</td>
+                    <td>
+                        <button class="Button Button--warning">Warning button
+                        </button>
+                    </td>
+                    <td>
+                        <button class="Button Button--warning" disabled>Warning
+                            button
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Button .Button--error</td>
+                    <td>
+                        <button class="Button Button--error">Error button
+                        </button>
+                    </td>
+                    <td>
+                        <button class="Button Button--error" disabled>Error
+                            button
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <h3>Buttons inside a .Grid</h3>
+            <div class="Grid txt--center">
+                <div class="L1-4 M1-3 S1-2 XS1-1">
                     <button class="Button">Button</button>
-                </td>
-                <td>
-                    <button class="Button Button" disabled>Button</button>
-                </td>
-            </tr>
-            <tr>
-                <td>.Button .Button--info</td>
-                <td>
+                </div>
+                <div class="L1-4 M1-3 S1-2 XS1-1">
                     <button class="Button Button--info">Info button</button>
-                </td>
-                <td>
-                    <button class="Button Button--info" disabled>Info button
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>.Button .Button--success</td>
-                <td>
+                </div>
+                <div class="L1-4 M1-3 S1-2 XS1-1">
                     <button class="Button Button--success">Success button
                     </button>
-                </td>
-                <td>
-                    <button class="Button Button--success" disabled>Success
-                        button
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>.Button .Button--warning</td>
-                <td>
+                </div>
+                <div class="L1-4 M1-3 S1-2 XS1-1">
                     <button class="Button Button--warning">Warning button
                     </button>
-                </td>
-                <td>
-                    <button class="Button Button--warning" disabled>Warning
-                        button
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td>.Button .Button--error</td>
-                <td>
+                </div>
+                <div class="L1-4 M1-3 S1-2 XS1-1">
                     <button class="Button Button--error">Error button</button>
-                </td>
-                <td>
-                    <button class="Button Button--error" disabled>Error button
-                    </button>
-                </td>
-            </tr>
-        </table>
-        <h3>Buttons inside a .Grid</h3>
-        <div class="Grid txt--center">
-            <div class="L1-4 M1-3 S1-2 XS1-1">
-                <button class="Button">Button</button>
+                </div>
             </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
-                <button class="Button Button--info">Info button</button>
-            </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
-                <button class="Button Button--success">Success button</button>
-            </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
-                <button class="Button Button--warning">Warning button</button>
-            </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
-                <button class="Button Button--error">Error button</button>
-            </div>
+            <h3>Buttons with .width--100 helper</h3>
+            <button class="Button width--100">Button</button>
+            <button class="Button Button--info width--100">Info button</button>
+            <button class="Button Button--success width--100">Success button
+            </button>
+            <button class="Button Button--warning width--100">Warning button
+            </button>
+            <button class="Button Button--error width--100">Error button
+            </button>
         </div>
-        <h3>Buttons with .width--100 helper</h3>
-        <button class="Button width--100">Button</button>
-        <button class="Button Button--info width--100">Info button</button>
-        <button class="Button Button--success width--100">Success button
-        </button>
-        <button class="Button Button--warning width--100">Warning button
-        </button>
-        <button class="Button Button--error width--100">Error button</button>
     </div>
 </section>
 <section>
-    <div class="Capsule">
-        <h2>Keys</h2>
-        <table class="Table">
-            <tr>
-                <th>Class</th>
-                <th>Output</th>
-            </tr>
-            <tr>
-                <td>.Key</td>
-                <td>
-                    <span class="Key">A</span>
-                    <span class="Key">B</span>
-                    <span class="Key">C</span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key__Secondary in .Key</td>
-                <td>
+    <div class="content">
+        <div class="Capsule">
+            <h2>Keys</h2>
+            <table class="Table">
+                <tr>
+                    <th>Class</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>.Key</td>
+                    <td>
+                        <span class="Key">A</span>
+                        <span class="Key">B</span>
+                        <span class="Key">C</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key__Secondary in .Key</td>
+                    <td>
                     <span class="Key">A<span
                             class="Key__Secondary">a</span></span>
-                    <span class="Key">B<span
-                            class="Key__Secondary">b</span></span>
-                    <span class="Key">C<span
-                            class="Key__Secondary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key__Teritary in .Key</td>
-                <td>
+                        <span class="Key">B<span
+                                class="Key__Secondary">b</span></span>
+                        <span class="Key">C<span
+                                class="Key__Secondary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key__Teritary in .Key</td>
+                    <td>
                     <span class="Key">A<span
                             class="Key__Tertiary">a</span></span>
-                    <span class="Key">B<span
-                            class="Key__Tertiary">b</span></span>
-                    <span class="Key">C<span
-                            class="Key__Tertiary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key__Secondary + .Key__Teritary in .Key</td>
-                <td>
+                        <span class="Key">B<span
+                                class="Key__Tertiary">b</span></span>
+                        <span class="Key">C<span
+                                class="Key__Tertiary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key__Secondary + .Key__Teritary in .Key</td>
+                    <td>
                     <span class="Key">A<span
                             class="Key__Secondary">+</span><span
                             class="Key__Tertiary">a</span></span>
-                    <span class="Key">B<span
-                            class="Key__Secondary">+</span><span
-                            class="Key__Tertiary">b</span></span>
-                    <span class="Key">C<span
-                            class="Key__Secondary">+</span><span
-                            class="Key__Tertiary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key .Key--active</td>
-                <td>
+                        <span class="Key">B<span
+                                class="Key__Secondary">+</span><span
+                                class="Key__Tertiary">b</span></span>
+                        <span class="Key">C<span
+                                class="Key__Secondary">+</span><span
+                                class="Key__Tertiary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key .Key--active</td>
+                    <td>
             <span class="Key Key--active">A<span class="Key__Secondary">+</span><span
                     class="Key__Tertiary">a</span></span>
-                    <span class="Key Key--active">B<span class="Key__Secondary">+</span><span
-                            class="Key__Tertiary">b</span></span>
-                    <span class="Key Key--active">C<span class="Key__Secondary">+</span><span
-                            class="Key__Tertiary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key .Key--info</td>
-                <td>
+                        <span class="Key Key--active">B<span
+                                class="Key__Secondary">+</span><span
+                                class="Key__Tertiary">b</span></span>
+                        <span class="Key Key--active">C<span
+                                class="Key__Secondary">+</span><span
+                                class="Key__Tertiary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key .Key--info</td>
+                    <td>
                     <span class="Key Key--info">A<span
                             class="Key__Secondary">a</span></span>
-                    <span class="Key Key--info">B<span
-                            class="Key__Secondary">b</span></span>
-                    <span class="Key Key--info">C<span
-                            class="Key__Secondary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key .Key--success</td>
-                <td>
+                        <span class="Key Key--info">B<span
+                                class="Key__Secondary">b</span></span>
+                        <span class="Key Key--info">C<span
+                                class="Key__Secondary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key .Key--success</td>
+                    <td>
                     <span class="Key Key--success">A<span
                             class="Key__Secondary">a</span></span>
-                    <span class="Key Key--success">B<span
-                            class="Key__Secondary">b</span></span>
-                    <span class="Key Key--success">C<span
-                            class="Key__Secondary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key .Key--warning</td>
-                <td>
+                        <span class="Key Key--success">B<span
+                                class="Key__Secondary">b</span></span>
+                        <span class="Key Key--success">C<span
+                                class="Key__Secondary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key .Key--warning</td>
+                    <td>
                     <span class="Key Key--warning">A<span
                             class="Key__Secondary">a</span></span>
-                    <span class="Key Key--warning">B<span
-                            class="Key__Secondary">b</span></span>
-                    <span class="Key Key--warning">C<span
-                            class="Key__Secondary">c</span></span>
-                </td>
-            </tr>
-            <tr>
-                <td>.Key .Key--error</td>
-                <td>
+                        <span class="Key Key--warning">B<span
+                                class="Key__Secondary">b</span></span>
+                        <span class="Key Key--warning">C<span
+                                class="Key__Secondary">c</span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>.Key .Key--error</td>
+                    <td>
                     <span class="Key Key--error">A<span
                             class="Key__Secondary">a</span></span>
-                    <span class="Key Key--error">B<span
-                            class="Key__Secondary">b</span></span>
-                    <span class="Key Key--error">C<span
-                            class="Key__Secondary">c</span></span>
-                </td>
-            </tr>
-        </table>
-        <h3>Without active keys</h3>
-        <div class="keyboard">
-            <span class="Key">q</span>
-            <span class="Key">w</span>
-            <span class="Key">e</span>
-            <span class="Key">r</span>
-            <span class="Key">t</span>
-            <span class="Key">z</span>
-            <span class="Key">u</span>
-            <span class="Key">i</span>
-            <span class="Key">o</span>
-            <span class="Key">p</span>
-            <span class="Key">ü</span>
-            <span class="Key">+<span class="Key__Secondary">*</span><span
-                    class="Key__Tertiary">~</span></span>
-            <br>
-            <span class="Key">a</span>
-            <span class="Key">s</span>
-            <span class="Key">d</span>
-            <span class="Key Key--grip">f</span>
-            <span class="Key">g</span>
-            <span class="Key">h</span>
-            <span class="Key Key--grip">j</span>
-            <span class="Key">k</span>
-            <span class="Key">l</span>
-            <span class="Key">ö</span>
-            <span class="Key">ä</span>
-            <span class="Key">#<span class="Key__Secondary">'</span></span>
-            <br>
-            <span class="Key"><<span class="Key__Secondary">></span><span
-                    class="Key__Tertiary">|</span></span>
-            <span class="Key">y</span>
-            <span class="Key">x</span>
-            <span class="Key">c</span>
-            <span class="Key">v</span>
-            <span class="Key">b</span>
-            <span class="Key">n</span>
-            <span class="Key">m</span>
-            <span class="Key">,<span class="Key__Secondary">;</span></span>
-            <span class="Key">.<span class="Key__Secondary">:</span></span>
-            <span class="Key">-</span>
-            <span class="Key">shift</span>
-            <br>
-        </div>
-        <div class="keyboard">
-            <h3>With active keys</h3>
-            <span class="Key">q</span>
-            <span class="Key">w</span>
-            <span class="Key">e</span>
-            <span class="Key">r</span>
-            <span class="Key">t</span>
-            <span class="Key">z</span>
-            <span class="Key">u</span>
-            <span class="Key">i</span>
-            <span class="Key">o</span>
-            <span class="Key">p</span>
-            <span class="Key">ü</span>
-            <span class="Key">+<span class="Key__Secondary">*</span><span
-                    class="Key__Tertiary">~</span></span>
-            <br>
-            <span class="Key">a</span>
-            <span class="Key">s</span>
-            <span class="Key">d</span>
-            <span class="Key Key--grip">f</span>
-            <span class="Key">g</span>
-            <span class="Key">h</span>
-            <span class="Key Key--grip">j</span>
-            <span class="Key Key--active">k</span>
-            <span class="Key">l</span>
-            <span class="Key">ö</span>
-            <span class="Key">ä</span>
-            <span class="Key">#<span class="Key__Secondary">'</span></span>
-            <br>
-            <span class="Key"><<span class="Key__Secondary">></span><span
-                    class="Key__Tertiary">|</span></span>
-            <span class="Key">y</span>
-            <span class="Key">x</span>
-            <span class="Key">c</span>
-            <span class="Key">v</span>
-            <span class="Key">b</span>
-            <span class="Key">n</span>
-            <span class="Key">m</span>
-            <span class="Key">,<span class="Key__Secondary">;</span></span>
-            <span class="Key">.<span class="Key__Secondary">:</span></span>
-            <span class="Key">-</span>
-            <span class="Key Key--active">shift</span>
-            <br>
-        </div>
-        <div class="keyboard">
-            <h3>Keys with colors</h3>
-            <span class="Key">q</span>
-            <span class="Key">w</span>
-            <span class="Key Key--success">e</span>
-            <span class="Key">r</span>
-            <span class="Key">t</span>
-            <span class="Key">z</span>
-            <span class="Key Key--error">u</span>
-            <span class="Key">i</span>
-            <span class="Key">o</span>
-            <span class="Key">p</span>
-            <span class="Key">ü</span>
-            <span class="Key">+<span class="Key__Secondary">*</span><span
-                    class="Key__Tertiary">~</span></span>
-            <br>
-            <span class="Key">a</span>
-            <span class="Key">s</span>
-            <span class="Key">d</span>
-            <span class="Key Key--grip">f</span>
-            <span class="Key">g</span>
-            <span class="Key">h</span>
-            <span class="Key Key--grip">j</span>
-            <span class="Key">k</span>
-            <span class="Key">l</span>
-            <span class="Key">ö</span>
-            <span class="Key">ä</span>
-            <span class="Key">#<span class="Key__Secondary">'</span></span>
-            <br>
-            <span class="Key"><<span class="Key__Secondary">></span><span
-                    class="Key__Tertiary">|</span></span>
-            <span class="Key Key--info">y</span>
-            <span class="Key">x</span>
-            <span class="Key">c</span>
-            <span class="Key">v</span>
-            <span class="Key">b</span>
-            <span class="Key Key--warning">n</span>
-            <span class="Key">m</span>
-            <span class="Key">,<span class="Key__Secondary">;</span></span>
-            <span class="Key">.<span class="Key__Secondary">:</span></span>
-            <span class="Key">-</span>
-            <span class="Key">shift</span>
-            <br>
+                        <span class="Key Key--error">B<span
+                                class="Key__Secondary">b</span></span>
+                        <span class="Key Key--error">C<span
+                                class="Key__Secondary">c</span></span>
+                    </td>
+                </tr>
+            </table>
+            <h3>Without active keys</h3>
+            <div class="keyboard">
+                <span class="Key">q</span>
+                <span class="Key">w</span>
+                <span class="Key">e</span>
+                <span class="Key">r</span>
+                <span class="Key">t</span>
+                <span class="Key">z</span>
+                <span class="Key">u</span>
+                <span class="Key">i</span>
+                <span class="Key">o</span>
+                <span class="Key">p</span>
+                <span class="Key">ü</span>
+                <span class="Key">+<span class="Key__Secondary">*</span><span
+                        class="Key__Tertiary">~</span></span>
+                <br>
+                <span class="Key">a</span>
+                <span class="Key">s</span>
+                <span class="Key">d</span>
+                <span class="Key Key--grip">f</span>
+                <span class="Key">g</span>
+                <span class="Key">h</span>
+                <span class="Key Key--grip">j</span>
+                <span class="Key">k</span>
+                <span class="Key">l</span>
+                <span class="Key">ö</span>
+                <span class="Key">ä</span>
+                <span class="Key">#<span class="Key__Secondary">'</span></span>
+                <br>
+                <span class="Key"><<span class="Key__Secondary">></span><span
+                        class="Key__Tertiary">|</span></span>
+                <span class="Key">y</span>
+                <span class="Key">x</span>
+                <span class="Key">c</span>
+                <span class="Key">v</span>
+                <span class="Key">b</span>
+                <span class="Key">n</span>
+                <span class="Key">m</span>
+                <span class="Key">,<span class="Key__Secondary">;</span></span>
+                <span class="Key">.<span class="Key__Secondary">:</span></span>
+                <span class="Key">-</span>
+                <span class="Key">shift</span>
+                <br>
+            </div>
+            <div class="keyboard">
+                <h3>With active keys</h3>
+                <span class="Key">q</span>
+                <span class="Key">w</span>
+                <span class="Key">e</span>
+                <span class="Key">r</span>
+                <span class="Key">t</span>
+                <span class="Key">z</span>
+                <span class="Key">u</span>
+                <span class="Key">i</span>
+                <span class="Key">o</span>
+                <span class="Key">p</span>
+                <span class="Key">ü</span>
+                <span class="Key">+<span class="Key__Secondary">*</span><span
+                        class="Key__Tertiary">~</span></span>
+                <br>
+                <span class="Key">a</span>
+                <span class="Key">s</span>
+                <span class="Key">d</span>
+                <span class="Key Key--grip">f</span>
+                <span class="Key">g</span>
+                <span class="Key">h</span>
+                <span class="Key Key--grip">j</span>
+                <span class="Key Key--active">k</span>
+                <span class="Key">l</span>
+                <span class="Key">ö</span>
+                <span class="Key">ä</span>
+                <span class="Key">#<span class="Key__Secondary">'</span></span>
+                <br>
+                <span class="Key"><<span class="Key__Secondary">></span><span
+                        class="Key__Tertiary">|</span></span>
+                <span class="Key">y</span>
+                <span class="Key">x</span>
+                <span class="Key">c</span>
+                <span class="Key">v</span>
+                <span class="Key">b</span>
+                <span class="Key">n</span>
+                <span class="Key">m</span>
+                <span class="Key">,<span class="Key__Secondary">;</span></span>
+                <span class="Key">.<span class="Key__Secondary">:</span></span>
+                <span class="Key">-</span>
+                <span class="Key Key--active">shift</span>
+                <br>
+            </div>
+            <div class="keyboard">
+                <h3>Keys with colors</h3>
+                <span class="Key">q</span>
+                <span class="Key">w</span>
+                <span class="Key Key--success">e</span>
+                <span class="Key">r</span>
+                <span class="Key">t</span>
+                <span class="Key">z</span>
+                <span class="Key Key--error">u</span>
+                <span class="Key">i</span>
+                <span class="Key">o</span>
+                <span class="Key">p</span>
+                <span class="Key">ü</span>
+                <span class="Key">+<span class="Key__Secondary">*</span><span
+                        class="Key__Tertiary">~</span></span>
+                <br>
+                <span class="Key">a</span>
+                <span class="Key">s</span>
+                <span class="Key">d</span>
+                <span class="Key Key--grip">f</span>
+                <span class="Key">g</span>
+                <span class="Key">h</span>
+                <span class="Key Key--grip">j</span>
+                <span class="Key">k</span>
+                <span class="Key">l</span>
+                <span class="Key">ö</span>
+                <span class="Key">ä</span>
+                <span class="Key">#<span class="Key__Secondary">'</span></span>
+                <br>
+                <span class="Key"><<span class="Key__Secondary">></span><span
+                        class="Key__Tertiary">|</span></span>
+                <span class="Key Key--info">y</span>
+                <span class="Key">x</span>
+                <span class="Key">c</span>
+                <span class="Key">v</span>
+                <span class="Key">b</span>
+                <span class="Key Key--warning">n</span>
+                <span class="Key">m</span>
+                <span class="Key">,<span class="Key__Secondary">;</span></span>
+                <span class="Key">.<span class="Key__Secondary">:</span></span>
+                <span class="Key">-</span>
+                <span class="Key">shift</span>
+                <br>
+            </div>
         </div>
     </div>
 </section>
 <section>
-    <h2>Forms</h2>
-    <div class="Capsule">
-        <div class="Grid">
+    <div class="content">
+        <h2>Forms</h2>
+        <div class="Capsule">
+            <div class="Grid">
 
+            </div>
         </div>
     </div>
 </section>

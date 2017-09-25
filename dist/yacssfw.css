@@ -390,19 +390,19 @@ template {
   display: none;
 }
 .txt--center {
-  text-align: center!important;
+  text-align: center !important;
 }
 .width--auto {
-  width: auto!important;
+  width: auto !important;
 }
 .width--100 {
-  width: 100%!important;
+  width: 100% !important;
 }
 .display--block {
-  display: block!important;
+  display: block !important;
 }
 .no--margin {
-  margin: 0!important;
+  margin: 0 !important;
 }
 .bg--info {
   background: #87cefa !important;
@@ -417,7 +417,22 @@ template {
   background: #f08080 !important;
 }
 .bg--transparent {
-  background: transparent!important;
+  background: transparent !important;
+}
+.txt--info {
+  color: #054f7d !important;
+}
+.txt--success {
+  color: #116e11 !important;
+}
+.txt--warning {
+  color: #897800 !important;
+}
+.txt--error {
+  color: #650c0c !important;
+}
+.txt--transparent {
+  color: transparent !important;
 }
 body {
   font-family: monospace;
@@ -447,6 +462,25 @@ h6 {
   font-size: 14px;
   margin-bottom: 5px;
 }
+.Header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Header__Logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  background: rgba(50, 50, 50, 0.4);
+}
+.Header__Logo a {
+  display: block;
+}
 .Capsule {
   padding: 0 10px;
   margin: 0 auto;
@@ -455,22 +489,22 @@ h6 {
 }
 @media (min-width: 1200px) {
   .Capsule {
-    width: 900px;
+    width: 964px;
   }
 }
 @media (max-width: 1199px) {
   .Capsule {
-    width: 700px;
+    width: 798px;
   }
 }
 @media (max-width: 989px) {
   .Capsule {
-    width: 700px;
+    width: 675px;
   }
 }
 @media (max-width: 779px) {
   .Capsule {
-    width: 90%;
+    width: 95%;
   }
 }
 .Grid {
