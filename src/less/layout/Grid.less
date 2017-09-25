@@ -3,41 +3,231 @@
 //==========================================================================
 
 .Grid {
-  display: flex;
-  width: 100%;
-}
-
-.Grid__Half-L {
-  padding: 10px;
-  flex-basis: 50%;
-  max-width: 50%;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
+//
+// Auto
+//
+
+.Auto {
+  flex: 1;
 }
 
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
+
+//
+// 1-1 Full
+//
+.XS1-1 {
+  flex: 1;
+    flex-basis: 100% !important;
+    max-width: 100%;
+
 }
 
-.Grid__Fourth-L {
-  padding: 10px;
-  width: 25%;
+.S1-1 {
+  flex: 1;
+    flex-basis: 100% !important;
+    max-width: 100%;
 }
 
-.Grid__Fifth-L {
-  padding: 10px;
-  width: 20%;
+.M1-1 {
+  flex: 1;
+    flex-basis: 100% !important;
+    max-width: 100%;
 }
 
-@media (max-width: @bp-L-min) {
-  .Grid__Half-L, .Grid__Third-L, .Grid__Fourth-L, .Grid__Fifth-L {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%
+.L1-1 {
+  flex: 1;
+    flex-basis: 100% !important;
+    max-width: 100%;
+}
+
+//
+// 1-2 Half
+//
+.XS1-2 {
+  flex: 1;
+  @media (max-width: @bp-XS-max ) and (min-width: @bp-XS-min) {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+
+.S1-2 {
+  flex: 1;
+  @media (max-width: @bp-S-max ) and (min-width: @bp-S-min) {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+
+.M1-2 {
+  flex: 1;
+  @media (max-width: @bp-M-max ) and (min-width: @bp-M-min) {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+
+.L1-2 {
+  flex: 1;
+  @media (min-width: @bp-L-min) {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+
+//
+// 1-3 Third
+//
+
+.XS1-3 {
+  flex: 1;
+  @media (max-width: @bp-XS-max) and (min-width: @bp-XS-min) {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+
+.S1-3 {
+  flex: 1;
+  @media (max-width: @bp-S-max) and (min-width: @bp-S-min) {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+
+.M1-3 {
+  flex: 1;
+  @media (max-width: @bp-M-max) and (min-width: @bp-M-min) {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+
+.L1-3 {
+  flex: 1;
+  @media (min-width: @bp-L-min) {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+
+//
+// 2-3 Third
+//
+
+.XS2-3 {
+  flex: 1;
+  @media (max-width: @bp-XS-max) and (min-width: @bp-XS-min) {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+
+.S2-3 {
+  flex: 1;
+  @media (max-width: @bp-S-max) and (min-width: @bp-S-min) {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+
+.M2-3 {
+  flex: 1;
+  @media (max-width: @bp-M-max) and (min-width: @bp-M-min) {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+
+.L2-3 {
+  flex: 1;
+  @media (min-width: @bp-L-min) {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+
+//
+// 1-4 Fourth
+//
+.XS1-4 {
+  flex: 1;
+  @media (max-width: @bp-XS-max) and (min-width: @bp-XS-min) {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+
+.S1-4 {
+  flex: 1;
+  @media (max-width: @bp-S-max) and (min-width: @bp-S-min) {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+
+.M1-4 {
+  flex: 1;
+  @media (max-width: @bp-M-max) and (min-width: @bp-M-min) {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+
+.L1-4 {
+  flex: 1;
+  @media (min-width: @bp-L-min) {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+
+//
+// 3-4 Fourth
+//
+.XS3-4 {
+  flex: 1;
+  @media (max-width: @bp-XS-max) and (min-width: @bp-XS-min) {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+
+.S3-4 {
+  flex: 1;
+  @media (max-width: @bp-S-max) and (min-width: @bp-S-min) {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+
+.M3-4 {
+  flex: 1;
+  @media (max-width: @bp-M-max) and (min-width: @bp-M-min) {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+
+.L3-4 {
+  flex: 1;
+  @media (min-width: @bp-L-min) {
+    flex-basis: 75% !important;
+    max-width: 75%;
   }
 }

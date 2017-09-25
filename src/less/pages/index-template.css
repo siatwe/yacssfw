@@ -19,36 +19,23 @@ h6 {
 .keyboard {
   text-align: center;
 }
-.Grid p {
+.Grid {
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.Grid__Half-L {
-  background: #87cefa;
-  color: #054f7d;
+section.Layout .Grid__Examples {
+  height: 25px;
+  line-height: 25px;
 }
-.Grid__Half-L:not(:last-of-type) {
-  border-right: 1px solid white;
-}
-.Grid__Third-L {
-  background: #90ee90;
-  color: #116e11;
-}
-.Grid__Third-L:not(:last-of-type) {
-  border-right: 1px solid white;
-}
-.Grid__Fourth-L {
-  background: #fff089;
-  color: #897800;
-}
-.Grid__Fourth-L:not(:last-of-type) {
-  border-right: 1px solid white;
-}
-.Grid__Fifth-L {
+section.Layout .Grid__Examples:nth-child(even) {
   background: #f08080;
   color: #650c0c;
 }
-.Grid__Fifth-L:not(:last-of-type) {
-  border-right: 1px solid white;
+section.Layout .Grid__Examples:nth-child(odd) {
+  background: #87cefa;
+  color: #054f7d;
+}
+.Grid__Examples {
+  height: auto;
 }

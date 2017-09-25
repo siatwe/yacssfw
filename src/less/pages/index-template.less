@@ -22,41 +22,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .Grid {
-  p {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+section.Layout {
+  .Grid__Examples {
+    height: 25px;
+    line-height: 25px;
+    &:nth-child(even) {
+      background: @color-error;
+      color: @color-error--text;
+    }
+    &:nth-child(odd) {
+      background: @color-info;
+      color: @color-info--text;
+    }
   }
 }
 
-.Grid__Half-L {
-  background: @color-info;
-  color: @color-info--text;
-  &:not(:last-of-type) {
-    border-right: 1px solid white;
-  }
-}
-
-.Grid__Third-L {
-  background: @color-success;
-  color: @color-success--text;
-  &:not(:last-of-type) {
-    border-right: 1px solid white;
-  }
-}
-
-.Grid__Fourth-L {
-  background: @color-warning;
-  color: @color-warning--text;
-  &:not(:last-of-type) {
-    border-right: 1px solid white;
-  }
-}
-
-.Grid__Fifth-L {
-  background: @color-error;
-  color: @color-error--text;
-  &:not(:last-of-type) {
-    border-right: 1px solid white;
-  }
+.Grid__Examples {
+  height: auto;
 }

@@ -1,23 +1,23 @@
 .Grid {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
 }
-.Grid__Half-L {
-  padding: 10px;
-  width: 50%;
+.Auto {
+  flex: 1;
 }
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
-}
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
-}
-.Grid__Fourth-L {
-  padding: 10px;
-  width: 25%;
-}
-.Grid__Fifth-L {
-  padding: 10px;
-  width: 20%;
+.M-1o2 {
+  flex: 1;
 }

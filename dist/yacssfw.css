@@ -423,6 +423,7 @@ body {
   font-family: monospace;
   font-size: 12px;
   color: #454545;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 45px;
@@ -449,16 +450,8 @@ h6 {
 .Capsule {
   padding: 0 10px;
   margin: 0 auto;
-}
-.Capsule:before {
-  display: table;
-  content: " ";
-}
-.Capsule:after {
-  display: table;
-  content: " ";
-  clear: both;
   box-sizing: border-box;
+  width: auto;
 }
 @media (min-width: 1200px) {
   .Capsule {
@@ -481,39 +474,221 @@ h6 {
   }
 }
 .Grid {
-  display: flex;
-  width: 100%;
-}
-.Grid__Half-L {
-  padding: 10px;
-  flex-basis: 50%;
-  max-width: 50%;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
+.Auto {
+  flex: 1;
 }
-.Grid__Third-L {
-  padding: 10px;
-  width: 33.3333%;
+.XS1-1 {
+  flex: 1;
+  flex-basis: 100% !important;
+  max-width: 100%;
 }
-.Grid__Fourth-L {
-  padding: 10px;
-  width: 25%;
+.S1-1 {
+  flex: 1;
+  flex-basis: 100% !important;
+  max-width: 100%;
 }
-.Grid__Fifth-L {
-  padding: 10px;
-  width: 20%;
+.M1-1 {
+  flex: 1;
+  flex-basis: 100% !important;
+  max-width: 100%;
 }
-@media (max-width: 1200px) {
-  .Grid__Half-L,
-  .Grid__Third-L,
-  .Grid__Fourth-L,
-  .Grid__Fifth-L {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
+.L1-1 {
+  flex: 1;
+  flex-basis: 100% !important;
+  max-width: 100%;
+}
+.XS1-2 {
+  flex: 1;
+}
+@media (max-width: 779px) and (min-width: 320px) {
+  .XS1-2 {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+.S1-2 {
+  flex: 1;
+}
+@media (max-width: 989px) and (min-width: 780px) {
+  .S1-2 {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+.M1-2 {
+  flex: 1;
+}
+@media (max-width: 1199px) and (min-width: 990px) {
+  .M1-2 {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+.L1-2 {
+  flex: 1;
+}
+@media (min-width: 1200px) {
+  .L1-2 {
+    flex-basis: 50% !important;
+    max-width: 50%;
+  }
+}
+.XS1-3 {
+  flex: 1;
+}
+@media (max-width: 779px) and (min-width: 320px) {
+  .XS1-3 {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+.S1-3 {
+  flex: 1;
+}
+@media (max-width: 989px) and (min-width: 780px) {
+  .S1-3 {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+.M1-3 {
+  flex: 1;
+}
+@media (max-width: 1199px) and (min-width: 990px) {
+  .M1-3 {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+.L1-3 {
+  flex: 1;
+}
+@media (min-width: 1200px) {
+  .L1-3 {
+    flex-basis: 33.33333% !important;
+    max-width: 33.33333%;
+  }
+}
+.XS2-3 {
+  flex: 1;
+}
+@media (max-width: 779px) and (min-width: 320px) {
+  .XS2-3 {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+.S2-3 {
+  flex: 1;
+}
+@media (max-width: 989px) and (min-width: 780px) {
+  .S2-3 {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+.M2-3 {
+  flex: 1;
+}
+@media (max-width: 1199px) and (min-width: 990px) {
+  .M2-3 {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+.L2-3 {
+  flex: 1;
+}
+@media (min-width: 1200px) {
+  .L2-3 {
+    flex-basis: 66.66666% !important;
+    max-width: 66.66666%;
+  }
+}
+.XS1-4 {
+  flex: 1;
+}
+@media (max-width: 779px) and (min-width: 320px) {
+  .XS1-4 {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+.S1-4 {
+  flex: 1;
+}
+@media (max-width: 989px) and (min-width: 780px) {
+  .S1-4 {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+.M1-4 {
+  flex: 1;
+}
+@media (max-width: 1199px) and (min-width: 990px) {
+  .M1-4 {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+.L1-4 {
+  flex: 1;
+}
+@media (min-width: 1200px) {
+  .L1-4 {
+    flex-basis: 25% !important;
+    max-width: 25%;
+  }
+}
+.XS3-4 {
+  flex: 1;
+}
+@media (max-width: 779px) and (min-width: 320px) {
+  .XS3-4 {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+.S3-4 {
+  flex: 1;
+}
+@media (max-width: 989px) and (min-width: 780px) {
+  .S3-4 {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+.M3-4 {
+  flex: 1;
+}
+@media (max-width: 1199px) and (min-width: 990px) {
+  .M3-4 {
+    flex-basis: 75% !important;
+    max-width: 75%;
+  }
+}
+.L3-4 {
+  flex: 1;
+}
+@media (min-width: 1200px) {
+  .L3-4 {
+    flex-basis: 75% !important;
+    max-width: 75%;
   }
 }
 .Alert {
