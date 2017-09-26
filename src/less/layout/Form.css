@@ -15,7 +15,7 @@ form input:not(:last-of-type) {
   margin-right: 10px;
 }
 form input[type="text"] {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   font-family: monospace;
 }

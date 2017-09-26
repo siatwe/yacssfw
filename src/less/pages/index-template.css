@@ -1,13 +1,6 @@
-.header {
-  margin-bottom: 40px;
-  margin-top: 30px;
-}
 section {
   padding: 25px 0 50px 0;
-  min-height: 100vh;
   position: relative;
-}
-section:nth-child(even) {
   background: rgba(117, 84, 217, 0.52);
 }
 h1,
@@ -17,6 +10,24 @@ h4,
 h5,
 h6 {
   text-align: center;
+}
+h2.content {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+h2.content:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5px;
+  width: 100%;
+  display: inline-block;
+  background: white;
 }
 .keyboard {
   text-align: center;
@@ -68,7 +79,4 @@ section.Layout .Col:nth-child(odd) {
   color: #116e11;
   bottom: 10px;
   left: 10px;
-  font-weight: bolder;
-  padding: 30px;
-  background: #90ee90;
 }

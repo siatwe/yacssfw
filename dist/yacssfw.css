@@ -395,6 +395,9 @@ template {
 .txt--bold {
   font-weight: bolder!important;
 }
+.txt--italic {
+  font-style: italic !important;
+}
 .width--auto {
   width: auto !important;
 }
@@ -436,6 +439,9 @@ template {
 }
 .txt--transparent {
   color: transparent !important;
+}
+.txt--white {
+  color: white !important;
 }
 body {
   font-family: monospace;
@@ -520,7 +526,7 @@ h6 {
 }
 @media (max-width: 779px) {
   .Flex--xs {
-    display: flex!important;
+    display: flex !important;
   }
 }
 .Flex--sm {
@@ -528,7 +534,7 @@ h6 {
 }
 @media (min-width: 780px) and (max-width: 989px) {
   .Flex--sm {
-    display: flex!important;
+    display: flex !important;
   }
 }
 .Flex--md {
@@ -536,7 +542,7 @@ h6 {
 }
 @media (min-width: 990px) and (max-width: 1199px) {
   .Flex--md {
-    display: flex!important;
+    display: flex !important;
   }
 }
 .Flex--lg {
@@ -544,12 +550,13 @@ h6 {
 }
 @media (min-width: 1200px) {
   .Flex--lg {
-    display: flex!important;
+    display: flex !important;
   }
 }
 .Col {
   flex: 1;
   flex-grow: 4;
+  padding: 0 10px;
 }
 .Col--big {
   flex-grow: 8;
@@ -574,7 +581,7 @@ form input:not(:last-of-type) {
   margin-right: 10px;
 }
 form input[type="text"] {
-  width: 100%;
+  width: 96%;
   padding: 10px;
   font-family: monospace;
 }

@@ -1,24 +1,32 @@
 @import "../abstract/variables";
 
-.header {
-  margin-bottom: 40px;
-  margin-top: 30px;
-}
-
 section {
   padding: 25px 0 50px 0;
-  min-height: 100vh;
   position: relative;
-  &:nth-child(even) {
     background: rgba(117, 84, 217, 0.52);
-  }
-  .content {
-
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
+}
+
+h2.content {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 5px;
+    width:100%;
+    display: inline-block;
+    background: white;
+  }
 }
 
 .keyboard {
@@ -77,8 +85,5 @@ section.Layout {
     color: @color-success--text;
     bottom: 10px;
     left: 10px;
-    font-weight: bolder;
-    padding: 30px;
-    background: @color-success;
   }
 }
