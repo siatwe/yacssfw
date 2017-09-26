@@ -26,15 +26,16 @@ h6 {
   margin: 0;
   padding: 0;
 }
-section.Layout .Grid__Examples {
+section.Layout .Col {
   height: 25px;
   line-height: 25px;
+  text-align: center;
 }
-section.Layout .Grid__Examples:nth-child(even) {
+section.Layout .Col:nth-child(even) {
   background: #f08080;
   color: #650c0c;
 }
-section.Layout .Grid__Examples:nth-child(odd) {
+section.Layout .Col:nth-child(odd) {
   background: #87cefa;
   color: #054f7d;
 }

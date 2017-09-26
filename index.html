@@ -27,184 +27,61 @@
 <section class="Layout">
     <div class="content">
         <h2>Grid layout</h2>
-        <h3>based on flex, with 4 given cols</h3>
+        <h3>based on flex</h3>
         <div class="Capsule">
-            <table class="Table">
-                <tr>
-                    <th>Class</th>
-                    <th>Output</th>
-                </tr>
-                <tr>
-                    <td>.Grid</td>
-                    <td>The grid container to receives grid items</td>
-                </tr>
-                <tr>
-                    <td>.Auto</td>
-                    <td>
-                        flex: 1;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Full:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        .L1-1 .M1-1 .S1-1 .XS1-1
-                    </td>
-                    <td>
-                        flex-base: 100%; max-width: 100%;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Half:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        .L1-2 .M1-2 .S1-2 .XS1-2
-                    </td>
-                    <td>
-                        flex-base: 50%; max-width: 50%;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Third:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .L1-3
-                        .M1-3 .S1-3 .XS1-3
-                    </td>
-                    <td>
-                        flex-base: 33.33333%; max-width: 33.33333%;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Quarter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .L1-4 .M1-4 .S1-4
-                        .XS1-4
-                    </td>
-                    <td>
-                        flex-base: 25%; max-width: 25%;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Two-Thirds:&nbsp;&nbsp; .L2-3 .M2-3 .S2-3 .XS2-3</td>
-                    <td>
-                        flex-base: 66.66666%; max-width: 66.66666%;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Three-Fourth: .L3-4 .M3-4 .S3-4 .XS3-4</td>
-                    <td>
-                        flex-base: 75%; max-width: 75%;
-                    </td>
-                </tr>
-            </table>
-            <div class="Grid">
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
+            <p>.Flex > 3x .Col, this cols will always auto sizing without
+                screen width limitation</p>
+            <div class="Flex">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <br>
-            <div class="Grid">
-                <div class="Grid__Examples L3-4 M1-4">.L3-4 .M1-4</div>
-                <div class="Grid__Examples L1-4 M3-4">.L1-4 .M3-4</div>
+            <p>.Flex .Flex--lg > 3x .Col, this cols will only displayed flex
+                if the screen is in large width (1200px or above). Beneath that
+                measurement they are displayed block with full width.</p>
+            <div class="Flex Flex--lg">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <br>
-            <div class="Grid">
-                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                    S1-2 .XS1-1
-                </div>
-                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                    S1-2 .XS1-1
-                </div>
-                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                    S1-2 .XS1-1
-                </div>
-                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                    S1-2 .XS1-1
-                </div>
+            <p>Same with .Flex--md (990px -> 1100px)</p>
+            <div class="Flex Flex--md">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <br>
-            <div class="Grid">
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples L1-4 M1-3 S1-2 XS1-1">.L1-4 .M1-3
-                    .S1-2
-                    .XS1-1
-                </div>
+            <p>Same with .Flex--sm (790px -> 989px)</p>
+            <div class="Flex Flex--sm">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <br>
-            <div class="Grid">
-                <div class="Grid__Examples L3-4 M3-4 S3-4 XS3-4">.L3-4 .M3-4
-                    .S3-4
-                    .XS3-4
-                </div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
+            <p>Same with .Flex--xs (779px =<)</p>
+            <div class="Flex Flex--xs">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <h3>Nested</h3>
-            <p>(3x <span
-                    class="bg--success txt--success">
-                .L1-3.M1-3.S1-3</span>
-                in 1x
-                <span class="bg--success txt--success">.L1-3.M1-2.S1-4.XS1-1</span>)
-                and
-                4x <span class="bg--success txt--success">.Auto</span></p>
-            <div class="Grid">
-                <div class="Grid__Examples L1-3 M1-2 S1-4 XS1-1">
-                    <div class="Grid">
-                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
-                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
-                        <div class="Grid__Examples L1-3 M1-3 S1-3">1-3</div>
-                    </div>
-                </div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
-                <div class="Grid__Examples Auto">.Auto</div>
+            <p>Combined: .Flex--lg .Flex--md .Flex--sm</p>
+            <div class="Flex Flex--lg Flex--md Flex--sm">
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
+                <div class="Col">.Col</div>
             </div>
-            <br>
-            <p>(2x <span
-                    class="bg--success txt--success">.L1-2.M1-2.S1-1.XS1-1</span>
-                in 1x <span class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
-            </p>
-            <p>(3x <span
-                    class="bg--success txt--success">.L1-3.M1-3.S1-3.XS1-3</span>
-                in 1x <span
-                        class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
-            </p>
-            <p>(4x <span
-                    class="bg--success txt--success">.L1-4.M1-4.S1-4.XS1-4</span>
-                in 1x <span class="bg--success txt--success">.L1-3.M1-2.S1-1.XS1-1</span>)
-            </p>
-            <div class="Grid">
-                <div class="L1-3 M1-2 S1-1 XS1-1">
-                    <div class="Grid">
-                        <div class="Grid__Examples L1-2 M1-2 S1-1 XS1-1">1/2
-                        </div>
-                        <div class="Grid__Examples L1-2 M1-2 S1-1 XS1-1">1/2
-                        </div>
-                    </div>
-                </div>
-                <div class="L1-3 M1-2 S1-1 XS1-1">
-                    <div class="Grid">
-                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
-                        </div>
-                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
-                        </div>
-                        <div class="Grid__Examples L1-3 M1-3 S1-3 XS1-3">1/3
-                        </div>
-                    </div>
-                </div>
-                <div class="L1-3 M1-2 S1-1 XS1-1">
-                    <div class="Grid">
-                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
-                        </div>
-                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
-                        </div>
-                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
-                        </div>
-                        <div class="Grid__Examples L1-4 M1-4 S1-4 XS1-4">1/4
-                        </div>
-                    </div>
-                </div>
+            <p>.Flex--lg .Flex--md with 1x .Col--big (double width) 1x
+                Col--small (half width)</p>
+            <div class="Flex Flex--lg Flex--md">
+                <div class="Col Col--big">.Col</div>
+                <div class="Col Col--small">.Col</div>
+            </div>
+            <p>.Flex--lg .Flex--md .Flex--sm with 2x .Col--big (double width) 3x
+                Col--small (half width)</p>
+            <div class="Flex Flex--sm Flex--md Flex--lg">
+                <div class="Col Col--big">.Col</div>
+                <div class="Col Col--big">.Col</div>
+                <div class="Col Col--small">.Col</div>
+                <div class="Col Col--small">.Col</div>
+                <div class="Col Col--small">.Col</div>
             </div>
         </div>
     </div>
@@ -212,13 +89,86 @@
 <section>
     <div class="content">
         <div class="Capsule">
-            <h2>Headings</h2>
+            <h2>Typography</h2>
             <h1>h1.YACSSFW Heading</h1>
             <h2>h2.YACSSFW Heading</h2>
             <h3>h3.YACSSFW Heading</h3>
             <h4>h4.YACSSFW Heading</h4>
             <h5>h5.YACSSFW Heading</h5>
             <h6>h6.YACSSFW Heading</h6>
+            <br>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent fringilla sollicitudin venenatis. Nunc eget elit
+                consequat, mattis ex lobortis, vestibulum mauris. Aenean
+                accumsan elementum leo. Nunc vestibulum, odio eu efficitur
+                porta, libero justo pellentesque risus, quis facilisis ipsum
+                urna vel risus. Duis laoreet feugiat scelerisque. Sed lacinia
+                quis nunc sit amet sagittis. In varius et lacus in pulvinar.
+                Pellentesque sed rhoncus arcu, non vestibulum libero. Aenean
+                quis orci nec sem malesuada elementum. Curabitur vehicula et
+                ligula vel aliquet. Nullam sodales a tellus in fermentum.
+            </p>
+            <p class="txt--bold">
+                Duis laoreet feugiat scelerisque. Sed lacinia
+                quis nunc sit amet sagittis. In varius et lacus in pulvinar.
+                Pellentesque sed rhoncus arcu, non vestibulum libero. Aenean
+                quis orci nec sem malesuada elementum. Curabitur vehicula et
+                ligula vel aliquet. Nullam sodales a tellus in fermentum.
+            </p>
+            <p>
+                Maecenas lectus libero, tincidunt at suscipit et, elementum in
+                mauris. Fusce aliquet odio tortor, non consectetur dolor porta
+                eu. Aenean pulvinar ante turpis, non volutpat risus euismod nec.
+                Cras vitae imperdiet lectus. Sed non urna id metus aliquet
+                porttitor. Suspendisse ut semper augue. In ut mollis nunc.
+            </p>
+            <p class="txt--bold">
+                Duis laoreet feugiat scelerisque. Sed lacinia
+                quis nunc sit amet sagittis. In varius et lacus in pulvinar.
+                Pellentesque sed rhoncus arcu, non vestibulum libero. Aenean
+                quis orci nec sem malesuada elementum. Curabitur vehicula et
+                ligula vel aliquet. Nullam sodales a tellus in fermentum.
+            </p>
+            <p>
+                Pellentesque venenatis venenatis ex, quis sagittis magna viverra
+                quis. Quisque at auctor mi. Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos.
+                Pellentesque efficitur augue quis quam laoreet suscipit. Aenean
+                tristique dui dignissim elit dictum convallis. Aliquam finibus
+                libero in luctus aliquam. Nullam congue ligula pulvinar,
+                vehicula sem nec, interdum mi. Integer efficitur risus vel porta
+                dapibus. Quisque molestie purus sit amet ante suscipit, a
+                pulvinar orci aliquet. Nunc ultrices placerat blandit. Phasellus
+                felis nunc, aliquam nec risus ut, venenatis facilisis tortor.
+            </p>
+            <p class="txt--bold">
+                Duis laoreet feugiat scelerisque. Sed lacinia
+                quis nunc sit amet sagittis. In varius et lacus in pulvinar.
+                Pellentesque sed rhoncus arcu, non vestibulum libero. Aenean
+                quis orci nec sem malesuada elementum. Curabitur vehicula et
+                ligula vel aliquet. Nullam sodales a tellus in fermentum.
+            </p>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit amet</li>
+                <li>Consectetur
+                    <ul>
+                        <li>Quis sagittis</li>
+                        <li>Tortor facilisis</li>
+                        <li>Nunc ultrices placerat blandit</li>
+                        <li>Integer</li>
+                        <li>Aliquam finibus
+                            <ul>
+                                <li>Class aptent taciti sociosqu</li>
+                                <li>Pellentesque efficitur augue</li>
+                                <li>Suspendisse ut semper augue</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -350,6 +300,167 @@
                     <td><a href="" class="Link Link--error">Error link</a></td>
                 </tr>
             </table>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
+            <p>Lorem ipsum dolor sit amet, <a class="Link"
+                                              href="">consectetur</a>
+                adipiscing elit. <a
+                        class="Link Link--info"
+                        href="">Praesent lacus
+                    risus</a>,
+                scelerisque ut
+                lorem a, tincidunt
+                cursus est. Nam sagittis maximus rhoncus. Maecenas non sapien et
+                lorem blandit eleifend eget ut sem. Nulla
+                sit
+                amet congue mauris. Vivamus non ante <a
+                        class="Link Link--success"
+                        href="">elementum</a>,
+                convallis eros
+                eget,
+                volutpat
+                lorem.
+                Phasellus vel <a class="Link Link--warning" href="">arcu</a> nec
+                turpis pellentesque condimentum. Duis scelerisque <a
+                        class="Link Link--error" href="">erat</a> non nisl
+                maximus
+                faucibus.</p>
             <p>Lorem ipsum dolor sit amet, <a class="Link"
                                               href="">consectetur</a>
                 adipiscing elit. <a
@@ -772,9 +883,46 @@
     <div class="content">
         <h2>Forms</h2>
         <div class="Capsule">
-            <div class="Grid">
-
-            </div>
+            <form>
+                <div class="Flex Flex--lg">
+                    <input class="Col" type="text" name="firstname"
+                           value="First Name">
+                    <input class="Col" type="text" name="firstname"
+                           value="Last Name">
+                </div>
+                <div class="Flex Flex--lg">
+                    <input class="Col" type="text" name="firstname"
+                           value="Street">
+                    <input class="Col" type="text" name="firstname"
+                           value="City">
+                </div>
+                <div class="Flex">
+                    <div class="Col">
+                        <textarea name="message"></textarea>
+                    </div>
+                </div>
+                <div class="Flex">
+                    <div class="Col">
+                        <input type="radio" name="gender" value="male" checked>
+                        Male
+                    </div>
+                    <div class="Col">
+                        <input type="radio" name="gender" value="female"> Female
+                    </div>
+                    <div class="Col">
+                        <input type="radio" name="gender" value="other"> Other
+                    </div>
+                </div>
+                <div class="Flex">
+                    <div class="Col">
+                        <input type="checkbox" name="vehicle1"
+                               value="Bike">Yes, I will receive 100 spam
+                        mails. Per day!
+                    </div>
+                </div>
+                <input type="submit" value="Contact us"
+                       class="Button Button--success width--100">
+            </form>
         </div>
     </div>
 </section>

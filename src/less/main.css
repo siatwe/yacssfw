@@ -392,6 +392,9 @@ template {
 .txt--center {
   text-align: center !important;
 }
+.txt--bold {
+  font-weight: bolder!important;
+}
 .width--auto {
   width: auto !important;
 }
@@ -507,223 +510,95 @@ h6 {
     width: 95%;
   }
 }
-.Grid {
-  box-sizing: border-box;
-  display: -webkit-box;
+.Flex {
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
-.Auto {
-  flex: 1;
+.Flex--xs {
+  display: block;
 }
-.XS1-1 {
-  flex: 1;
-  flex-basis: 100% !important;
-  max-width: 100%;
-}
-.S1-1 {
-  flex: 1;
-  flex-basis: 100% !important;
-  max-width: 100%;
-}
-.M1-1 {
-  flex: 1;
-  flex-basis: 100% !important;
-  max-width: 100%;
-}
-.L1-1 {
-  flex: 1;
-  flex-basis: 100% !important;
-  max-width: 100%;
-}
-.XS1-2 {
-  flex: 1;
-}
-@media (max-width: 779px) and (min-width: 320px) {
-  .XS1-2 {
-    flex-basis: 50% !important;
-    max-width: 50%;
+@media (max-width: 779px) {
+  .Flex--xs {
+    display: flex!important;
   }
 }
-.S1-2 {
-  flex: 1;
+.Flex--sm {
+  display: block;
 }
-@media (max-width: 989px) and (min-width: 780px) {
-  .S1-2 {
-    flex-basis: 50% !important;
-    max-width: 50%;
+@media (min-width: 780px) and (max-width: 989px) {
+  .Flex--sm {
+    display: flex!important;
   }
 }
-.M1-2 {
-  flex: 1;
+.Flex--md {
+  display: block;
 }
-@media (max-width: 1199px) and (min-width: 990px) {
-  .M1-2 {
-    flex-basis: 50% !important;
-    max-width: 50%;
+@media (min-width: 990px) and (max-width: 1199px) {
+  .Flex--md {
+    display: flex!important;
   }
 }
-.L1-2 {
-  flex: 1;
+.Flex--lg {
+  display: block;
 }
 @media (min-width: 1200px) {
-  .L1-2 {
-    flex-basis: 50% !important;
-    max-width: 50%;
+  .Flex--lg {
+    display: flex!important;
   }
 }
-.XS1-3 {
+.Col {
   flex: 1;
+  flex-grow: 4;
 }
-@media (max-width: 779px) and (min-width: 320px) {
-  .XS1-3 {
-    flex-basis: 33.33333% !important;
-    max-width: 33.33333%;
-  }
+.Col--big {
+  flex-grow: 8;
 }
-.S1-3 {
-  flex: 1;
+.Col--small {
+  flex-grow: 2;
 }
-@media (max-width: 989px) and (min-width: 780px) {
-  .S1-3 {
-    flex-basis: 33.33333% !important;
-    max-width: 33.33333%;
-  }
+form input {
+  margin-bottom: 10px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  transition: background .3s;
 }
-.M1-3 {
-  flex: 1;
+form input:hover,
+form input:active,
+form input:focus {
+  background: #d7d7d7;
+  transition: background .3s;
 }
-@media (max-width: 1199px) and (min-width: 990px) {
-  .M1-3 {
-    flex-basis: 33.33333% !important;
-    max-width: 33.33333%;
-  }
+form input:not(:last-of-type) {
+  margin-right: 10px;
 }
-.L1-3 {
-  flex: 1;
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-family: monospace;
 }
-@media (min-width: 1200px) {
-  .L1-3 {
-    flex-basis: 33.33333% !important;
-    max-width: 33.33333%;
-  }
+form input[type="radio"] {
+  margin-top: 10px;
 }
-.XS2-3 {
-  flex: 1;
+form input[type="checkbox"] {
+  margin-top: 10px;
+  margin-right: 10px;
 }
-@media (max-width: 779px) and (min-width: 320px) {
-  .XS2-3 {
-    flex-basis: 66.66666% !important;
-    max-width: 66.66666%;
-  }
+form textarea {
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+  width: 100%;
+  min-height: 150px;
+  font-family: monospace;
+  transition: background .3s;
 }
-.S2-3 {
-  flex: 1;
-}
-@media (max-width: 989px) and (min-width: 780px) {
-  .S2-3 {
-    flex-basis: 66.66666% !important;
-    max-width: 66.66666%;
-  }
-}
-.M2-3 {
-  flex: 1;
-}
-@media (max-width: 1199px) and (min-width: 990px) {
-  .M2-3 {
-    flex-basis: 66.66666% !important;
-    max-width: 66.66666%;
-  }
-}
-.L2-3 {
-  flex: 1;
-}
-@media (min-width: 1200px) {
-  .L2-3 {
-    flex-basis: 66.66666% !important;
-    max-width: 66.66666%;
-  }
-}
-.XS1-4 {
-  flex: 1;
-}
-@media (max-width: 779px) and (min-width: 320px) {
-  .XS1-4 {
-    flex-basis: 25% !important;
-    max-width: 25%;
-  }
-}
-.S1-4 {
-  flex: 1;
-}
-@media (max-width: 989px) and (min-width: 780px) {
-  .S1-4 {
-    flex-basis: 25% !important;
-    max-width: 25%;
-  }
-}
-.M1-4 {
-  flex: 1;
-}
-@media (max-width: 1199px) and (min-width: 990px) {
-  .M1-4 {
-    flex-basis: 25% !important;
-    max-width: 25%;
-  }
-}
-.L1-4 {
-  flex: 1;
-}
-@media (min-width: 1200px) {
-  .L1-4 {
-    flex-basis: 25% !important;
-    max-width: 25%;
-  }
-}
-.XS3-4 {
-  flex: 1;
-}
-@media (max-width: 779px) and (min-width: 320px) {
-  .XS3-4 {
-    flex-basis: 75% !important;
-    max-width: 75%;
-  }
-}
-.S3-4 {
-  flex: 1;
-}
-@media (max-width: 989px) and (min-width: 780px) {
-  .S3-4 {
-    flex-basis: 75% !important;
-    max-width: 75%;
-  }
-}
-.M3-4 {
-  flex: 1;
-}
-@media (max-width: 1199px) and (min-width: 990px) {
-  .M3-4 {
-    flex-basis: 75% !important;
-    max-width: 75%;
-  }
-}
-.L3-4 {
-  flex: 1;
-}
-@media (min-width: 1200px) {
-  .L3-4 {
-    flex-basis: 75% !important;
-    max-width: 75%;
-  }
+form textarea:hover,
+form textarea:active,
+form textarea:focus {
+  background: #d7d7d7;
+  transition: background .3s;
 }
 .Alert {
   display: block;

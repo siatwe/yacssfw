@@ -2,14 +2,12 @@ Yet Another CSS Framework
 =========================
 An experimental framework following the BEM CSS rules
 -----------------------------------------------------
-
-see project page to see examples of the latest release: <a href="https://siatwe.github.io/projects/yacssfw/index.html" 
-target="_blank">yacssfw</a>
+<a href="https://siatwe.github.io/projects/yacssfw/index.html" 
+target="_blank">project page - Examples</a>
 
 FEATURES
 ========
-- [x] Responsive: Classic grid layout
-- [ ] Responsive: Flex layout
+- [x] Responsive: Flex layout
 - [ ] Responsive navigation with dropdowns and burger menu
 - [x] Unified monospace typography
 
