@@ -20,7 +20,7 @@ COMPONENTS
 - [x] Buttons
 - [x] Keyboard keys
 - [ ] Dropdowns
-- [ ] Forms
+- [x] Forms
 - [ ] Modals
 
 REQUIREMENTS

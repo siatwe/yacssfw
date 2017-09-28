@@ -520,6 +520,7 @@ h6 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  margin: 0 -10px;
 }
 .Flex--xs {
   display: block;
@@ -606,6 +607,28 @@ form textarea:active,
 form textarea:focus {
   background: #d7d7d7;
   transition: background .3s;
+}
+.NavBar {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+}
+.NavBar li {
+  background: #fff089;
+  width: 100%;
+  height: auto;
+  border-right: 1px solid white;
+}
+.NavBar li:last-of-type {
+  border-right: none;
+}
+.NavBar li a {
+  padding: 10px 0;
+  display: block;
+  text-decoration: none;
 }
 .Alert {
   display: block;
@@ -750,6 +773,7 @@ form textarea:focus {
   color: #bfbfbf;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
+  transition: all 0.3s;
 }
 .Button--info {
   background: #87cefa;

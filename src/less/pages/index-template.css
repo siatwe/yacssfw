@@ -1,7 +1,10 @@
+body {
+  background: #c1b7ff;
+}
 section {
   padding: 25px 0 50px 0;
   position: relative;
-  background: rgba(117, 84, 217, 0.52);
+  background: #c1b7ff;
 }
 h1,
 h2,

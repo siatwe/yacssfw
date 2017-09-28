@@ -1,0 +1,25 @@
+//==========================================================================
+// Component: NavBar
+//==========================================================================
+.NavBar {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  background: rgba(0, 0, 0, .5);
+  margin: 0;
+  padding: 0;
+  li {
+    background: @color-warning;
+    width: 100%;
+    height: auto;
+    border-right: 1px solid white;
+    &:last-of-type {
+      border-right: none;
+    }
+    a {
+      padding: 10px 0;
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
