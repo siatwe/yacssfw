@@ -22,6 +22,7 @@ COMPONENTS
 - [ ] Dropdowns
 - [x] Forms
 - [ ] Modals
+- [ ] Tabs
 
 REQUIREMENTS
 ============
