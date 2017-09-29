@@ -19,7 +19,7 @@ COMPONENTS
 - [x] Tables
 - [x] Buttons
 - [x] Keyboard keys
-- [ ] Dropdowns
+- [x] Dropdowns, Dropups
 - [x] Forms
 - [ ] Modals
 - [ ] Tabs
@@ -31,6 +31,7 @@ REQUIREMENTS
 USAGE
 =====
 The needed files can be found in the dist/ directory. 
-- Import the yacssfw css file into the head of your website
-- Import the yacssfw js file before the closing body tag of your website but
+- Import the yacssfw.min.css file into the head of your website
+- Import the yacssfw.min.js file before the closing body tag of your website
+ but
 after the jQuery js file
