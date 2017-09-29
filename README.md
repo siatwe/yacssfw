@@ -2,7 +2,7 @@ Yet Another CSS Framework
 =========================
 An experimental framework following the BEM CSS rules
 -----------------------------------------------------
-<a href="https://siatwe.github.io/projects/yacssfw/index.html" 
+<a href="https://siatwe.github.io/yacssfw" 
 target="_blank">project page - Examples</a>
 
 FEATURES
