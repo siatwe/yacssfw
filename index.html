@@ -260,7 +260,7 @@
             lacus, quis vestibulum nisl libero ut metus.
             <span class="Quote__Footer">Julius Caesar</span>
         </div>
-        <p>Quotes inside flex grid.</p>
+        <h3>Quotes inside flex grid.</h3>
         <div class="Flex">
             <div class="Col Col--big">
                 <div class="Quote Quote--error">
@@ -616,22 +616,22 @@
             </tr>
         </table>
         <h3>Buttons inside a .Grid</h3>
-        <div class="Grid txt--center">
-            <div class="L1-4 M1-3 S1-2 XS1-1">
+        <div class="Flex Flex--lg Flex--md">
+            <div class="Col">
                 <button class="Button">Button</button>
             </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
+            <div class="Col">
                 <button class="Button Button--info">Info button</button>
             </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
+            <div class="Col">
                 <button class="Button Button--success">Success button
                 </button>
             </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
+            <div class="Col">
                 <button class="Button Button--warning">Warning button
                 </button>
             </div>
-            <div class="L1-4 M1-3 S1-2 XS1-1">
+            <div class="Col">
                 <button class="Button Button--error">Error button</button>
             </div>
         </div>
@@ -946,30 +946,301 @@
 <section>
     <h2 class="content">Dropdowns</h2>
     <div class="Capsule">
-        <div class="Dropdown">
-            <button class="Button Button--success">Dropdown</button>
-            <ul class="Dropdown__Content">
-                <li><a class="Link Link--success" href="">Secondary</a></li>
-                <li class="Dropdown__Tertiary">Secondary
-                    <ul>
-                        <li>
-                            <a class="Link Link--success" href="">Tertiary
-                            </a>
-                        </li>
-                        <li>
-                            <a class="Link Link--success" href="">Tertiary
-                            </a>
-                        </li>
-                        <li>
-                            <a class="Link Link--success" href="">Tertiary
-                            </a>
-                        </li>
+        <div class="Flex Flex--lg Flex--md">
+            <div class="Col">
+                <div class="Dropdown width--100">
+                    <button class="Button width--100">Dropdown</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
                     </ul>
-                </li>
-                <li><a class="Link Link--success" href="">Secondary</a></li>
-                <li><a class="Link Link--success" href="">Secondary</a></li>
-                <li><a class="Link Link--success" href="">Secondary</a></li>
-            </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--info width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--success width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--warning width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--error width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3>Dropup</h3>
+        <div class="Flex Flex--lg Flex--md">
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--error width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--warning width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--success width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--info width--100">
+                    <button class="Button width--100">Dropup</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up width--100">
+                    <button class="Button width--100">Dropdown</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3>With tertiary menu</h3>
+        <h4>Dropdown</h4>
+        <div class="Flex">
+            <div class="Col">
+                <div class="Dropdown">
+                    <button class="Button">Show me the tertiary!</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--error">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--info">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--warning">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h4>Dropup</h4>
+        <div class="Flex">
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--error">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--info">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up Dropdown--warning">
+                    <button class="Button">Show me the tertiary!
+                    </button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to
+                            show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Col">
+                <div class="Dropdown Dropdown--up">
+                    <button class="Button">Show me the tertiary!</button>
+                    <ul class="Dropdown__Content">
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                        <li class="Dropdown__Content-Tertiary">Has more to show
+                            <ul>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                                <li><a href="">Tertiary</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Secondary</a></li>
+                        <li><a href="">Secondary</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>
