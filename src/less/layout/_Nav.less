@@ -1,0 +1,67 @@
+//==============================================================================
+// N A V
+//==============================================================================
+.Nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: @color-dark;
+      width: 100%;
+      text-align: center;
+      transition: all @transform;
+      a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        color: @color-light;
+        text-decoration: none;
+        transition: all @transform;
+      }
+      &:hover {
+        background: @color-light;
+        transition: all @transform;
+        a {
+          color: @color-dark;
+          transition: all @transform;
+        }
+      }
+    }
+  }
+  //----------------------------------------------------------------------------
+  // Nav--modifier
+  //----------------------------------------------------------------------------
+  &--xs {
+    ul {
+      display: block;
+      @media (max-width: @bp-XS-max) {
+        display: flex !important;
+      }
+    }
+  }
+  &--sm {
+    ul {
+      display: block;
+      @media (min-width: @bp-SM-min) and (max-width: @bp-SM-max) {
+        display: flex !important;
+      }
+    }
+  }
+  &--md {
+    ul {
+      display: block;
+      @media (min-width: @bp-MD-min) and (max-width: @bp-MD-max) {
+        display: flex !important;
+      }
+    }
+  }
+  &--lg {
+    ul {
+      display: block;
+      @media (min-width: @bp-LG-min) {
+        display: flex !important;
+      }
+    }
+  }
+}
